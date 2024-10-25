@@ -66,6 +66,13 @@ namespace KissAdam10251
             string st = Convert.ToString(vegeredmeny);
             string szemgs = szemSzam2 + st;
             Console.WriteLine($"Ez a 11 számmal {szemgs}");
+
+            string fileName = "szemszam.txt";
+            using (StreamWriter writer = new StreamWriter(fileName))
+            {
+                writer.WriteLine(szemSzam2);
+                writer.WriteLine(szemSzam);
+            }  
         }
     }
 }
