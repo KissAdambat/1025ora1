@@ -63,7 +63,9 @@ namespace KissAdam10251
                 vegeredmeny = szorzo * szemSzam2[i];
                 szorzo++;
             }
-            string st = Convert.ToString(vegeredmeny);
+
+            int vegeredmeny2 = vegeredmeny % 11;
+            string st = Convert.ToString(vegeredmeny2);
             string szemgs = szemSzam2 + st;
             Console.WriteLine($"Ez a 11 számmal {szemgs}");
 
