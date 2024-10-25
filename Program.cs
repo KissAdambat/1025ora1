@@ -47,11 +47,25 @@ namespace KissAdam10251
             if (szulev > szulev2)
             {
                 Console.WriteLine($"{szemSzam} az idősebb");
-
+                var korlunb = cd2 - cd;
+                Console.WriteLine($"A kor különbség {korlunb}");
             }
-            else { Console.WriteLine($"{szemSzam2} az idősebb."); }
-
-
+            else 
+            {
+                Console.WriteLine($"{szemSzam2} az idősebb.");
+                var korlunb = cd - cd2;
+                Console.WriteLine($"A kor különbség {korlunb}");
+            }
+            int vegeredmeny = 0;
+            int szorzo = 1;
+            for (int i = 0;i < 10 ;i++)
+            {
+                vegeredmeny = szorzo * szemSzam2[i];
+                szorzo++;
+            }
+            string st = Convert.ToString(vegeredmeny);
+            string szemgs = szemSzam2 + st;
+            Console.WriteLine($"Ez a 11 számmal {szemgs}");
         }
     }
 }
